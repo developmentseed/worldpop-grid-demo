@@ -1,0 +1,38 @@
+{
+  "name": "worldpop-grid-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "budo index.js --live -- -t babelify | garnish",
+    "build": "cp index.html dist/ && browserify index.js > dist/index.js"
+  },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  },
+  "keywords": [
+    "mapbox",
+    "gl",
+    "codeflow",
+    "example",
+    "cli",
+    "maps"
+  ],
+  "author": "Anand Thakker",
+  "license": "ISC",
+  "devDependencies": {
+    "babelify": "^6.3.0",
+    "browserify": "^11.1.0",
+    "budo": "^4.2.1",
+    "garnish": "^3.2.0",
+    "mapbox-gl-style-spec": "^8.1.0"
+  },
+  "dependencies": {
+    "chroma-js": "^1.1.1",
+    "gl-draw": "github:mapbox/gl-draw",
+    "mapbox-gl": "^0.11.0",
+    "react": "^0.13.3"
+  }
+}
